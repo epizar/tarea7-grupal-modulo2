@@ -1,129 +1,99 @@
+/* ============================
+  ESTILOS GENERALES
+============================ */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 80px; /* deja espacio para el footer */
+}
+
+/* IDs de fondo específicos por página */
 #indexbody {
-    background-color: rgba(187, 226, 12, 0.897);
-    font-family:
-        Arial;
-    text-align: center;
+  background-color: rgba(187, 226, 12, 0.897);
 }
 
 #bodycontacto {
-    background-color: rgb(231, 145, 95)
-}
-.link {
-      color: aliceblue;
-}
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #7c1b1bb2;
+  background-color: rgb(231, 145, 95);
 }
 
-a {
-    color: rgba(235, 225, 225, 0.897);
+/* ============================
+  TIPOGRAFÍA Y ENCABEZADOS
+============================ */
+
+h1 {
+  text-transform: uppercase;
+  color: #7c1b1bb2;
+  margin-top: 1rem;
 }
+
 h2 {
-    text-align: center;
+  margin-top: 1rem;
 }
+
+a,
+.enlace {
+  color: rgba(255, 255, 255, 0.851);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover,
+.enlace:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+  NAVBAR Y MENÚ
+============================ */
 
 .navbar {
-    text-align: center;
+  text-align: center;
 }
 
 #slogan {
-    font-size: large;
-    color: aliceblue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
-
-img {
-    width: 18rem; 
-    height: 18rem;
-    border: 1px solid rgba(0, 0, 0, 0.562);
-    border-radius: 20px;
+  font-size: large;
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #navicon {
-    width: 30px;
-    height: 24px;
-    border: none;
+  width: 30px;
+  height: 24px;
+  border: none;
 }
 
+/* ============================
+  IMÁGENES Y PRODUCTOS
+============================ */
+
+img {
+  border: 1px solid rgba(0, 0, 0, 0.562);
+  border-radius: 20px;
+}
+
+.productos img {
+  width: 250px;
+  height: 250px;
+}
+
+/* ============================
+  PIE DE PÁGINA
+============================ */
+
 footer {
-    position: fixed;
-    bottom: 0;
-    right: 5%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative; /* en vez de fixed, para evitar que tape contenido */
+  margin-top: 2rem;
 }
 
 .pie-pagina {
-    background-color: black;
-    color: white;
+  font-size: 0.875rem;
 }
 
-.enlace {
-    color: rgba(255, 255, 255, 0.851);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:600;
-    text-decoration: none;
-}
-
-.enlace:hover {
-    color: rgba(255, 255, 255, 0.851);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:600;
-    text-decoration: none
-}
-.menu{
-    display:flex;
-    justify-content: center;
-
-}
-
-.menu li{
-    list-style: none;
-    margin: 20px 10px;
-
-}
-
-.empresa p{
-    display:flex;
-    justify-content: center;
-}
-
-
-/* EJEMPLO DE MEDIA QUERY
-@media (max-width: 600px) {
-    body {
-      font-size: 16px;
-    }
-  } */
-  
-  @media (max-width: 576px) {
-      body {
-          font-size: 15px;
-      }
-
-    .productos img{
-        width: 100px;
-        height: 100px;
-    }
-  }
-  @media (min-width: 577px) {
-
-    #indexbody {
-        font-size: 20px;
-    }
-    .productos img{
-        width: 150px;
-        height: 150px;
-    }
-  }
-  @media (min-width: 768px) {
-
-    #indexbody {
-        font-size: 25px;
-    }
-    .productos img{
-        width: 250px;
-        height: 250px;
-    }
-  }
+/* ============================
+  RESPONSIVE

@@ -1,99 +1,35 @@
-/* ============================
-  ESTILOS GENERALES
-============================ */
-
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+/* Asegurar que el body tenga altura completa y respete el footer */
+html, body {
   margin: 0;
-  padding-bottom: 80px; /* deja espacio para el footer */
+  padding: 0;
+  height: 100%;
 }
 
-/* IDs de fondo específicos por página */
-#indexbody {
-  background-color: rgba(187, 226, 12, 0.897);
-}
-
+/* Para cualquier body con fondo personalizado y footer al fondo */
+#indexbody,
 #bodycontacto {
-  background-color: rgb(231, 145, 95);
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 60px; /* igual o mayor al alto del footer */
 }
 
-/* ============================
-  TIPOGRAFÍA Y ENCABEZADOS
-============================ */
-
-h1 {
-  text-transform: uppercase;
-  color: #7c1b1bb2;
-  margin-top: 1rem;
+/* Contenedor general si se usa en algunas páginas */
+#contenido {
+  padding-bottom: 60px;
 }
 
-h2 {
-  margin-top: 1rem;
-}
-
-a,
-.enlace {
-  color: rgba(255, 255, 255, 0.851);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-a:hover,
-.enlace:hover {
-  text-decoration: underline;
-}
-
-/* ============================
-  NAVBAR Y MENÚ
-============================ */
-
-.navbar {
-  text-align: center;
-}
-
-#slogan {
-  font-size: large;
-  color: aliceblue;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#navicon {
-  width: 30px;
-  height: 24px;
-  border: none;
-}
-
-/* ============================
-  IMÁGENES Y PRODUCTOS
-============================ */
-
-img {
-  border: 1px solid rgba(0, 0, 0, 0.562);
+/* Cards con fondo blanco traslúcido */
+#test {
+  background-color: rgba(255, 255, 255, 0.541);
   border-radius: 20px;
 }
 
-.productos img {
-  width: 250px;
-  height: 250px;
-}
-
-/* ============================
-  PIE DE PÁGINA
-============================ */
-
+/* Footer con altura fija */
 footer {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
   background-color: black;
   color: white;
   text-align: center;
-  padding: 1rem 0;
-  position: relative; /* en vez de fixed, para evitar que tape contenido */
-  margin-top: 2rem;
 }
-
-.pie-pagina {
-  font-size: 0.875rem;
-}
-
-/* ============================
-  RESPONSIVE
